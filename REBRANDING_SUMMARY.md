@@ -88,7 +88,7 @@ The following elements were **NOT** changed and may need attention:
 
 3. **External Links**:
    - Free trial link: `https://ramaca.shop/step/demo/`
-   - WhatsApp link: `https://wa.link/kkdei9`
+   - WhatsApp link: `https://wa.me/447956154482`
    - Tawk.to chat integration ID
 
 ---

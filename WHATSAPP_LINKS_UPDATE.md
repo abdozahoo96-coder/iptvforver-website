@@ -57,7 +57,7 @@ All WhatsApp links and "Get Started" / "Order Now" buttons have been successfull
 
 ### **Old Links Replaced:**
 - ❌ `https://ramaca.shop/step/demo/` (Start Free Trial)
-- ❌ `https://wa.link/kkdei9` (Old WhatsApp)
+- ❌ `https://wa.me/447956154482` (Old WhatsApp)
 - ❌ `https://wa.link/tt8c55` (Old WhatsApp)
 - ❌ `https://wa.me/18733000545` (Old WhatsApp number)
 - ❌ `https://1ai.growth4ch.shop/` (1 Month subscription)

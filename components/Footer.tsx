@@ -93,7 +93,7 @@ export default function Footer() {
                 <div className="w-9 h-9 rounded-lg bg-primary-500/10 flex items-center justify-center flex-shrink-0">
                   <Phone className="w-4 h-4 text-primary-400" />
                 </div>
-                <a href="https://wa.link/kkdei9" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-sm">
+                <a href="https://wa.me/447956154482" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors text-sm">
                   +44 7956 154482 <span className="hidden sm:inline text-slate-600">{t('footer.whatsapp')}</span>
                 </a>
               </div>

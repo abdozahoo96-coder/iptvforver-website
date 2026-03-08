@@ -121,7 +121,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16 px-4"
           >
             <a
-              href="https://wa.link/kkdei9"
+              href="https://wa.me/447956154482"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-glow px-8 py-4 text-lg flex items-center justify-center gap-2"

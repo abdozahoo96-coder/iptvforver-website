@@ -16,7 +16,7 @@ export function IPTVFORVERStructuredData() {
       "serviceArea": "Worldwide"
     },
     "sameAs": [
-      "https://wa.link/kkdei9"
+      "https://wa.me/447956154482"
     ],
     "address": {
       "@type": "PostalAddress",

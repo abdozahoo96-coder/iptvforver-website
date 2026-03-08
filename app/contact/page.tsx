@@ -30,7 +30,7 @@ export default function Contact() {
       title: t('contact.methods.whatsapp.title'),
       description: t('contact.methods.whatsapp.description'),
       contact: "+44 7956 154482",
-      link: "https://wa.link/kkdei9",
+      link: "https://wa.me/447956154482",
       available: t('contact.methods.whatsapp.available')
     }
   ]
@@ -104,7 +104,7 @@ export default function Contact() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">{t('contact.cta.title')}</h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto text-slate-300">{t('contact.cta.description')}</p>
-          <a href="https://wa.link/kkdei9" target="_blank" rel="noopener noreferrer" className="btn-glow px-8 py-4 rounded-lg text-lg font-semibold inline-block">{t('contact.cta.button')}</a>
+          <a href="https://wa.me/447956154482" target="_blank" rel="noopener noreferrer" className="btn-glow px-8 py-4 rounded-lg text-lg font-semibold inline-block">{t('contact.cta.button')}</a>
         </div>
       </section>
 

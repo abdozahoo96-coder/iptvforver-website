@@ -111,7 +111,7 @@ export default async function Blog() {
             Get the latest updates about IPTV FORVER services, streaming technology and exclusive offers.
           </p>
           <a
-            href="https://wa.link/kkdei9"
+            href="https://wa.me/447956154482"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-semibold hover:bg-primary-700 transition-colors inline-block"

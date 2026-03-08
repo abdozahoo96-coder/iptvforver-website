@@ -65,7 +65,7 @@ export default function Header() {
           <div className="hidden sm:flex items-center gap-3">
             <LanguageSwitcher />
             <a
-              href="https://wa.link/kkdei9"
+              href="https://wa.me/447956154482"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-glow px-5 py-2.5 text-sm"
@@ -116,7 +116,7 @@ export default function Header() {
                 <div className="pt-3 flex flex-col gap-3 px-4">
                   <LanguageSwitcher />
                   <a
-                    href="https://wa.link/kkdei9"
+                    href="https://wa.me/447956154482"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-glow px-6 py-3 text-center"

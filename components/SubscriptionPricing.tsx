@@ -175,7 +175,7 @@ export default function SubscriptionPricing() {
 
                   {/* CTA */}
                   <a
-                    href="https://wa.link/kkdei9"
+                    href="https://wa.me/447956154482"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`mt-auto block w-full py-3 rounded-xl text-base font-bold transition-all duration-300 ${plan.popular

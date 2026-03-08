@@ -115,7 +115,7 @@ export default function English() {
               View Premium Plans
             </a>
             <a
-              href="https://wa.link/kkdei9"
+              href="https://wa.me/447956154482"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white bg-opacity-10 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors inline-flex items-center justify-center"
@@ -313,7 +313,7 @@ export default function English() {
               Get Premium Plan
             </a>
             <a
-              href="https://wa.link/eepo31"
+              href="https://wa.me/447956154482"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white bg-opacity-10 border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors inline-flex items-center justify-center"

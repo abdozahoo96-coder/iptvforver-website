@@ -131,7 +131,7 @@ export default function About() {
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-6">{t('about.cta.title')}</h2>
           <p className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto text-slate-300">{t('about.cta.description')}</p>
           <a
-            href="https://wa.link/kkdei9"
+            href="https://wa.me/447956154482"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-glow px-8 py-4 rounded-xl text-lg font-bold inline-block"
