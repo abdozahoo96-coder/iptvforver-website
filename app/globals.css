@@ -313,3 +313,33 @@ a:focus-visible {
   border-color: rgba(99, 102, 241, 0.6);
   box-shadow: 0 0 40px rgba(99, 102, 241, 0.2), 0 20px 60px rgba(0, 0, 0, 0.3);
 }
+
+/* === MOBILE ANIMATION SAFETY NET === */
+/* Framer-motion's whileInView uses Intersection Observer, which can fail 
+   on some mobile browsers (especially iOS Safari), leaving elements stuck 
+   at opacity: 0. This forces all sections to become visible after a delay. */
+@keyframes forceVisible {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Target all sections and their children that may have opacity:0 from framer-motion */
+section,
+section>div,
+section>div>div {
+  opacity: 1 !important;
+}
+
+/* Override framer-motion inline styles on mobile after initial load */
+@media (max-width: 1024px) {
+
+  [style*="opacity: 0"],
+  [style*="opacity:0"] {
+    animation: forceVisible 0.6s ease-out 1.5s forwards !important;
+  }
+}

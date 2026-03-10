@@ -53,9 +53,13 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
         return
       }
 
-      // Use a geolocation API to detect country
+      // Use a geolocation API to detect country (with strict timeout)
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 2000)
       try {
-        const response = await fetch('https://ipapi.co/json/', { signal: AbortSignal.timeout(3000) })
+        const response = await fetch('https://ipapi.co/json/', { signal: controller.signal })
+        clearTimeout(timeoutId)
+        if (!response.ok) return
         const data = await response.json()
 
         if (data.country_code === 'NL') {
@@ -67,10 +71,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
         }
         // If not NL/FR, keep English (already loaded)
       } catch {
-        // Geolocation failed, keep English
+        clearTimeout(timeoutId)
+        // Geolocation failed (CORS, network, timeout), keep English
       }
-    } catch (error) {
-      console.error('Language detection failed:', error)
+    } catch {
+      // Language detection failed, keep English
     }
   }
 
