@@ -89,10 +89,9 @@ export default function SubscriptionPricing() {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 1, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="text-center mb-14 px-4"
         >
           <span className="inline-flex items-center gap-2 glass-card px-4 py-1.5 rounded-full text-xs font-semibold text-primary-300 mb-4 uppercase tracking-wider">
@@ -114,10 +113,9 @@ export default function SubscriptionPricing() {
             {plans.map((plan, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 1, y: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.08 }}
                 className={`relative rounded-2xl p-6 transition-all duration-400 ${plan.popular
                   ? 'pricing-popular glass-card border-primary-500 shadow-glow-primary'
                   : 'glass-card'

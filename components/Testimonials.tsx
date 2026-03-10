@@ -23,10 +23,9 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 1, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase text-primary-300 glass-card mb-4">
@@ -45,10 +44,9 @@ export default function Testimonials() {
           {testimonials.map((testimonial: any, index: number) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 1, y: 0 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="glass-card rounded-2xl p-6 sm:p-7 group"
             >
               {/* Quote + Stars */}
@@ -155,10 +153,9 @@ export default function Testimonials() {
             ].map((chat, i) => (
               <motion.div
                 key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
+                initial={{ opacity: 1, scale: 1 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
                 className="relative group h-full"
               >
                 {/* Dynamic WhatsApp Window */}

@@ -14,10 +14,9 @@ export default function ChannelLogosCarousel() {
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 1, y: 0 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="text-center mb-10 sm:mb-14"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3">
@@ -35,6 +34,7 @@ export default function ChannelLogosCarousel() {
           <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 bg-gradient-to-l from-surface-950 to-transparent z-10 pointer-events-none" />
 
           <div className="flex space-x-4 sm:space-x-6 md:space-x-8 animate-scroll-infinite">
+            {/* Reduced number of duplicates for mobile performance */}
             {[...logos, ...logos].map((logo, index) => (
               <div
                 key={index}
@@ -43,7 +43,9 @@ export default function ChannelLogosCarousel() {
                 <div className="w-full h-full bg-white/90 group-hover:bg-white rounded-[10px] flex items-center justify-center p-2 sm:p-3 transition-colors duration-300">
                   <img
                     src={logo}
-                    alt={`Channel ${(index % 17) + 1}`}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
                     className="max-w-full max-h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                 </div>
