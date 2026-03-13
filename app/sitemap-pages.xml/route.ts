@@ -4,18 +4,25 @@ export const revalidate = 0
 
 export async function GET() {
   const staticPages = [
-    'https://iptvforver.com',
-    'https://iptvforver.com/about',
-    'https://iptvforver.com/blog',
-    'https://iptvforver.com/pricing',
-    'https://iptvforver.com/contact',
-    'https://iptvforver.com/contacts',
-    'https://iptvforver.com/en',
-    'https://iptvforver.com/product/1-month',
-    'https://iptvforver.com/product-category/iptv-subscription/page/3',
+    { url: 'https://iptvforver.com', changefreq: 'daily', priority: '1.0' },
+    { url: 'https://iptvforver.com/about', changefreq: 'weekly', priority: '0.8' },
+    { url: 'https://iptvforver.com/blog', changefreq: 'daily', priority: '0.9' },
+    { url: 'https://iptvforver.com/pricing', changefreq: 'weekly', priority: '0.95' },
+    { url: 'https://iptvforver.com/contact', changefreq: 'weekly', priority: '0.85' },
+    { url: 'https://iptvforver.com/en', changefreq: 'weekly', priority: '0.7' },
+    { url: 'https://iptvforver.com/product/1-month', changefreq: 'weekly', priority: '0.8' },
+    { url: 'https://iptvforver.com/product-category/iptv-subscription/page/3', changefreq: 'weekly', priority: '0.6' },
   ]
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${staticPages.map(url => `<url><loc>${url}</loc><lastmod>${new Date().toISOString()}</lastmod><changefreq>${url === 'https://iptvforver.com' ? 'daily' : 'weekly'}</changefreq><priority>${url === 'https://iptvforver.com' ? '1.0' : '0.8'}</priority></url>`).join('')}</urlset>`
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${staticPages.map(page => `  <url>
+    <loc>${page.url}</loc>
+    <lastmod>${new Date().toISOString()}</lastmod>
+    <changefreq>${page.changefreq}</changefreq>
+    <priority>${page.priority}</priority>
+  </url>`).join('\n')}
+</urlset>`
 
   return new NextResponse(sitemap, {
     headers: {
